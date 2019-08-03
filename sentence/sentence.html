@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!-- Author: Guillermina Gonjon
+     Date:   August 3, 2010
+ -->
+   <head>
+   <title>Sentence Elements Finder</title>
+      <style type="text/css">
+         input { font-size: 1.3em; line-height: 1.9em; 
+                 background-color: #669;
+                 color: #fff;
+                 padding: 4px 12px;
+                 border-radius: 10px 10px 10px;
+                 }
+         textarea { font-size: 1.4em; line-height: 1.6em;
+                    background-color: #eee;color: #336;
+                    padding:1.5em;
+                    border:2px solid #99c;
+                    border-radius: 8px 8px 8px;
+                    } 
+      </style>
+   </head>
+   <body>
+      <form name="sentence" action="Sentence7.php" method="get">
+         <label name="add">Add a Sentence: </label><br>
+         <textarea name="sentence" rows="4" cols="100" value=""><?php echo $_GET['sentence'];?>
+         </textarea><br>
+         <input type="submit" name="add" value="Add Sentence"/><br>
+         <textarea name="result" rows="10" cols="100" value=""><?php echo print_r($sentence->word);?></textarea><br>
+         
+      </form>
+   </body>
+</html>
