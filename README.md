@@ -4,4 +4,5 @@ Here are a few classes not yet related identifying the parts of a sentence, anot
 them into subject and predicative and later into sentence.
 
 The current stage for this project is Alpha.
+<img src="https://raw.githubusercontent.com/gmanon/language/sentence/sentence/language_data/sentence_elements_finder.png" alt="language-sec:sentence element finder">
 
