@@ -1,0 +1,22 @@
+Response process
+  * Listen (getConversation: paragraph or paragraphs)
+  * Understand structure ( Is question, stament, exlamation or a group of all. How many questions )
+  * Understand meaning	 ( What is it about: find main subject or matter )
+      * Matter ( Does it relates to first, second or 3rd person )
+      * Matter ( Is it plural or singular )
+      * Matter ( Is it present, past or future )
+      * Matter ( Is it possitive or negative )
+      * Matter ( Find key words )
+      * Matter ( Find key names )
+      * Matter ( Find key place or places )
+
+  * If Question ( Give a response )
+      * Basic Response
+	* Uses question words to find out the main matter.
+	* Revert the order to comply with grammar
+      * Complex Response
+	* Uses question words to find out the main matter.
+	* Revert the order to comply with grammar
+	* Based on meaning, try to brings a relevant comment (solution)
+  * If Statement ( Give a short relevant comment )
+  * If exclamation ( Agree or dissagree If relevant to yourself or ideas you support)
