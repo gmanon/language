@@ -1,0 +1,55 @@
+Remembering / Forgeting
+
+ " Forgeting is important to keep things relevant and fresh.  It allows to speed out the process and save memory
+ 
+ Memory = Word Bank
+ 
+ Different levels of memory ->
+	* Fresh Memory ( quick access memory )
+	* Permanent Memory ( Hard to forget )
+	* Temporary Memory ( Cash memory, it needs more re-inforcement to become permanent )
+	* Bare Memory	   ( Incomplete, briefly touched; it may dissapear at any moment if not confirmed )
+	* Forgotten: dumped( Is there, but it won't retrive unless a significan part is re-activated or re-learned );
+	
+ Frequency: Level of frequency depends on the number of times a word has been detected within a period of time.  
+	    The greatest the frequency, the easier to retrive the word and higher chances to remain on permanent memory.
+	    
+	  Every word needs a word id and frequency.  The application needs a time listener to determine the frequency.
+	  
+ Freshness:  The time past since the word was last detected.  Every word is kept at the top of "Fresh Memory" everytime is detected.
+	    When a new one is detected, the word past to the second placement in priority or freshness.
+		      * Divide total list by 4 ( 4 stages of memory)
+			result is the number of placements within each memory
+			Every memory has equal amount of placements
+	      placements = Num_items / 4  
+	      
+	      if(position <= placements){ freshness = 1; }
+	      elseif(position > placements && position > 2(placements)){ freshness = 2; }
+	      elseif(position > 2(placements) && (position < 3(placements)){ freshness = 3; }
+	      else{ freshness = 4; }
+	      
+	    
+ Lenght:    Shorter words are easily retained in the Permanent memory than long words.  Long words need more exposition in order to be
+	    remembered.
+	    
+	    Defined by the number of characters. 
+	    
+		(int) L = NUM_OF_CHARACTERS * (-1)		// To keep the number low and favor less over more.
+	    
+ Intensity: Words matching with objectives ( Grade System ) are more relevant to purpose, and therefore more desirables.  The have 
+	   presedence over non matching words.
+	   
+	   * Relevance shows intensity: Intensity could be either positive or negative.  In this case, shallow takes the back seat.
+	   * Hight intensity words will be remembered either positive or negative.  This will change the personality of the Bot.  
+	   * The more possitive feedback, the nicer Bot we will have, the more negative, the most evil the Bot.
+		For the purpose of WORD_RECORDING_VALUE, Relevance turns into a positive number;
+	   
+	   
+	   WORD_RECORDING_VALUE = FREQUENCY + FRESHNESS + LENGHT + INTENSITY
+	   
+	   
+	   
+    
+   
+   
+  

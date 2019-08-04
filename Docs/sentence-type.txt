@@ -1,0 +1,76 @@
+LIST OS STRUCTURE PATTERNS OF SENTENCES IN ENGLISH
+
+
+Simple                          
+        (subject-noun)(predicative-verb )
+        
+Simple-compound:predicative 
+        (subject-noun)(conjunction)(predicative-verb )
+        
+Simple-direct object
+        (subject-noun)(predicative-verb ) (direct-object)
+        
+Simple-indirect object
+        (subject-noun)(predicative-verb ) (direct-object) (indirect-object)
+
+Simple-complemented-predicative
+        (subject-noun)(predicative-verb ) (direct-object) (noun or adjective)
+        
+Simple-objective-complemented
+        (subject-noun)(predicative-verb ) (object complement)
+        
+Adjective
+        (subject-noun -> adjective)
+        (predicative-verb -> preposition object adjective ) 
+        (direct-object -> adjective) 
+        (indirect-object)
+        
+Adverb
+        (subject-noun -> adjective Adverb)
+        (predicative-verb -> adjective) 
+        (predicative-adjective -> adjective Adverb)
+             
+Subject Phrases - Prepositional Noun Phrases
+        (preposition preposition-object -> article / adjective)
+        (predicative-verb -> predicative-noun / predicative-adjective) 
+
+Gerund Noun Phrases
+        (gerund direct-object) (indirect-object) 
+        
+Infinitive Noun Phrases
+        (Infinitive direct-object) (indirect-object)         
+        
+Prepositional Adjective Phrases
+        (preposition) (object) 
+                
+Prepositional Adverb Phrases
+        (preposition-adverb) (object) 
+                
+Appositives
+        (head-word)(Appositive)
+        
+Possessive Adjectives
+        (subject-nounbject -> Possessive) 
+        (predicative-verb) 
+        (predicative noun / predicative adjective) 
+        
+Direct Address
+        (subject-noun) (predicative-verb)
+        
+Exclamation
+        (subject-noun) (predicative-verb) (direct-object)
+        
+        
+compound sentence 
+        (subject-noun) (predicative-verb) (subject-noun) (predicative-verb)
+        
+        
+
+        
+
+        
+        
+
+        
+        
+        
