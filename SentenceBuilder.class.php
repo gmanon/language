@@ -7,7 +7,8 @@
  */   
 
 class SentenceBuilder{
-  private $sentence;
+ private $sentence;
+
   private $subject;
   private $predicative;
   
@@ -16,6 +17,25 @@ class SentenceBuilder{
     $this->defineSubject($article='',$noun='',$adjective='',$pronoun='');
     $this->definePredicative($verb='',$helping_verb='',$adverb='',$object_pronoun='',$reflexive_pronoun, $adverbial_preposition='');
     $this->buildSentence();
+  }
+  
+    static function 
+defineSubjects ($article='',$noun='',$adjective='',$pronoun='')
+  {
+    $subject = '';
+    
+    if(isset($pronoun)){ $subject = "$article $adjective $noun "; }
+    elseif(isset($noun)){ $subject = "$article $adjective $pronoun "; }
+    elseif((isset($pronoun))&&(isset($article))){ $subject = "$adjective 
+$noun "; }
+    elseif((isset($noun))&&(isset($article))&&(isset($adjective))){ 
+$subject = "$pronoun "; }
+    elseif(isset($noun)){ $subject = "$article $adjective $pronoun "; 
+    
+    }
+    
+    return $subject;
+  
   }
    
   function defineSubject($article='',$noun='',$adjective='',$pronoun='')
@@ -32,15 +52,18 @@ class SentenceBuilder{
   {
     if(isset($helping_verb))
     { 
-      $this->predicative = "$verb $adverb $object_pronoun $reflexive_pronoun  $adverbial_preposition"; 
+      $this->predicative = "$verb $adverb $object_pronoun $adverbial_preposition 
+$reflexive_pronoun "; 
     }
     elseif((isset($helping_verb))&&(isset($object_pronoun)))
     { 
-      $this->predicative = "$verb $adverb $object_pronoun $reflexive_pronoun  $adverbial_preposition"; 
+      $this->predicative = "$verb $adverb $object_pronoun  
+$adverbial_preposition $reflexive_pronoun"; 
     }
     elseif((isset($helping_verb))&&(isset($object_pronoun))&&(isset($reflexive_pronoun)))
     { 
-      $this->predicative = "$verb $adverb $object_pronoun $reflexive_pronoun  $adverbial_preposition"; 
+      $this->predicative = "$verb $adverb $object_pronoun  
+$adverbial_preposition $reflexive_pronoun"; 
     }
     elseif((isset($adverbial_preposition))&&(isset($adverb))&&(isset($helping_verb))&&(isset($reflexive_pronoun)))
     {$this->predicative = "$verb"; }
@@ -68,5 +91,8 @@ class SentenceBuilder{
 }
 
 $sentence = new SentenceBuilder();
-//$sentence->buildSentence();
 print_r($sentence);
+
+echo "\n<br/>static function: ";
+print Sentence::defineSubjects('a','home','beautiful','it');
+
